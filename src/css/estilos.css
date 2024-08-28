@@ -1,0 +1,112 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.conteudo {
+    background-color: #de0977a2;
+    position: absolute;
+    top: 0;
+    left: 10px; 
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:baseline;
+    min-height: 100vh;
+    max-width: 380px;
+}  
+
+.conteudo .subtitulo{
+    color: rgb(255, 234, 0);
+    font-family: "Montserrat";
+    font-weight: 200;
+    font-size:15px;
+    margin-top: 5px;
+}
+
+.conteudo .titulo {
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-size: 33px;
+    font-family: "Cinzel";
+    font-weight: 400;
+    
+}
+
+.conteudo .descricao {
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+ }
+ 
+ .conteudo .logo {
+    background-image: url("../imagens/logo-paris.png");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 275px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes .botao{
+    border: none;
+    background: none;
+    cursor: pointer;  
+}
+
+.botoes .botao img{
+    padding: none;
+    width: 50%;   
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.3);
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px #ff00bf96;
+}
+
+
+
+

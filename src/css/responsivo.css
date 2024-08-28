@@ -1,0 +1,68 @@
+@media  (max-width: 769px){
+    main .personagem .imagem {
+        height: 100%;
+    }
+    .conteudo {
+        justify-content: flex-end;
+        left: 0;
+        top: -20%;
+        max-width:100vw ;
+        padding: 30px;
+    }
+ 
+    
+    .botoes {
+     flex-direction: row;
+     align-items: flex-end;
+     width: 100%;
+     margin: none;
+    }
+ 
+    .botoes .botao .img{
+        max-width: 100px;
+        width: 80px;
+        height: auto;
+    }
+}
+
+
+
+
+@media (max-width: 390px) {
+    main .personagem .imagem {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 25vh; 
+        z-index: 1;   
+    }
+
+    .conteudo{
+        justify-content: center; 
+        
+    }
+    .conteudo.descricao{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+
+    .conteudo .logo {
+        height: 93px;
+        width: 253px;
+        margin-top: 80px;
+        margin-left: 48px;
+        z-index: 2;
+    }
+
+    .botoes {
+        flex-direction: row-reverse;
+        top: -8%;
+        min-height: 85vh;
+        z-index: 4;
+    }
+
+    .botoes .botao img {
+        max-width: 100px;
+    }
+}
